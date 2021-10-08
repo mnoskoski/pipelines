@@ -1,0 +1,9 @@
+parameters:
+  workDir: './'
+  pDockerfile: 'Dockerfile'
+steps:
+- task: Docker@2
+  displayName: DockerBuild
+  inputs:
+    command: 'build'
+    Dockerfile: '**/Dockerfile'

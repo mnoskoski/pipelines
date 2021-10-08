@@ -1,0 +1,5 @@
+stages:
+- stage: buildDockerfile
+  jobs:
+  - template: ../../jobs/job-buildDockerfile.yaml
+  

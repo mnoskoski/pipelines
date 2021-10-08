@@ -1,0 +1,6 @@
+jobs:
+- job: prepareForDevOrQa
+  steps:
+  - template: ../../tasks/docker/
+    workDir: '$(path)'
+    pDockerfile: 'Dockerfile'

@@ -1,0 +1,13 @@
+trigger:
+  - main
+  - develop
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  versionNpm: '14.15.4'
+
+stages:
+- template: ../stages/webserver/stage-dockerbuild.yaml
+- template: ../stages/commons/stage-scan.yaml
