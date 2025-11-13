@@ -12,4 +12,5 @@ jobs:
       - name: hello second job
         run: echo "Hello second job"
   reuse-job:
+    needs: [first-job, second-job]
     uses: ./.github/workflows/reuse-task.yaml
