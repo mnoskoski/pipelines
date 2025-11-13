@@ -6,5 +6,10 @@ jobs:
     steps:
       - name: hello world
         run: echo "Hello first workflow"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello second job
+        run: echo "Hello second job"
   reuse-job:
     uses: ./.github/workflows/reuse-task.yaml
