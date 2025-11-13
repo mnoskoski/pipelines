@@ -1,11 +1,8 @@
-name: build-docker
-on:
-  push:
-    branches:
-      - master
-      - develop
+name: first workflow
+on: push
 jobs:
-  check-bats-version:
+  first-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello world"
+      - name: hello world
+        run: echo "Hello world"
