@@ -2,7 +2,6 @@ name: first workflow
 on: push
 jobs:
   first-job:
-    if: github.ref == 'master'
     runs-on: ubuntu-latest
     steps:
       - name: hello world
