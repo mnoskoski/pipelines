@@ -8,4 +8,4 @@ jobs:
         run: echo "Hello first workflow"
 
       - name: Reuse Task
-        uses: ./github/workflows/reuse-task.yaml
+        uses: .github/workflows/reuse-task.yaml 
